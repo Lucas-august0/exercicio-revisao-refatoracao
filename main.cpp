@@ -5,8 +5,6 @@
 
 int main() {
 
-  //implementar os gets e sets na classe empregado.h e metodos no empregado.cpp
-
   Engenheiro eng1;
   eng1.setNomeEngenheiro("Joao Snow");
   eng1.setSalarioHora(35);
