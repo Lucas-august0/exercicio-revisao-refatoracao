@@ -6,23 +6,14 @@
 
 class Empregado {
 	
-  public:
+  protected:
     double salarioHora;  
     double quotaMensalVendas;  
 
-
-    double pagamentoMes(double horasTrabalhadas) {
- 
-      double t = horasTrabalhadas;
-	  
-	  //Cálculo de hora extra (+50% se horasTrabalhadas > 8)
-      if (horasTrabalhadas > 8) {
-        double x = horasTrabalhadas - 8;
-        t += x / 2;
-      }
-	  return t * salarioHora;
-    }
+  public:
+    double pagamentoMes(double horasTrabalhadas); //jogar o metodo para o .cpp
+    void setSalarioHora(double salario_por_hora);
+    void setQuotaMensalVendas(double quota_mensal);
 	
 };
-
 #endif
